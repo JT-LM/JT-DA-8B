@@ -1,0 +1,11 @@
+# Python cache file
+**/__pycache__/
+
+# Jupyter checkpoint file
+**/.ipynb_checkpoints/
+
+# macOS system file
+**/.DS_Store
+**/.DS_Store?
+**/._*
+._*
