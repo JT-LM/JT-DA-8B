@@ -12,7 +12,7 @@ You can download the full model parameters at [JT-DA-8B](https://huggingface.co/
 
 ## SFT
 
-You can fine-tune our model using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), a flexible and powerful training framework designed for LLaMA-style large language models. Follow the steps below to perform full-parameter supervised fine-tuning (SFT) on your custom dataset:
+You can fine-tune our model using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), a flexible and powerful training framework designed for LLaMA-style large language models. We recommend pulling the latest official code from [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for training purposes. Follow the steps below to perform full-parameter supervised fine-tuning (SFT) on your custom dataset:
 
 ### 1. Environment Setup
 First, clone the LLaMA-Factory repository and install its dependencies.
