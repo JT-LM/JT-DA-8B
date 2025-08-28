@@ -127,13 +127,13 @@ pip show vllm
 For example, the path may look like
 
 ```bash
-/root/miniconda3/envs/vllm/lib/python3.10/site-packages
+/root/miniconda3/envs/XXX/lib/python3.10/site-packages
 ```
 
 #### 2.2 Register Jiutian model
 
 ```bash
-vim /root/miniconda3/envs/vllm/lib/python3.10/site-packages/model_executor/models/__init__.py
+vim /root/miniconda3/envs/XXX/lib/python3.10/site-packages/vllm/model_executor/models/__init__.py
 ```
 
 Add the following entries:
@@ -148,7 +148,7 @@ _GENERATION_MODELS = {
 #### 2.3 Modify the ```utils.py```
 
 ```bash
-vim /root/miniconda3/envs/vllm/lib/python3.10/site-packages/model_executor/model_loader/utils.py
+vim /root/miniconda3/envs/XXX/lib/python3.10/site-packages/vllm/model_executor/model_loader/utils.py
 ```
 
 Replace the script with the following content.
@@ -200,11 +200,11 @@ def get_architecture_class_name(model_config: ModelConfig) -> str:
 Copy the ```configuration_jiutian.py``` and ```jiutian_vllm.py``` provided in ```jiutian``` directory in this repo into the following path:
 
 ```bash
-cp -R configuration_jiutian.py /root/miniconda3/envs/vllm/lib/python3.10/site-packages/model_executor/models/
-cp -R jiutian_vllm.py /root/miniconda3/envs/vllm/lib/python3.10/site-packages/model_executor/models/
+cp -R configuration_jiutian.py /root/miniconda3/envs/XXX/lib/python3.10/site-packages/vllm/model_executor/models/
+cp -R jiutian_vllm.py /root/miniconda3/envs/XXX/lib/python3.10/site-packages/vllm/model_executor/models/
 
 # Rename jiutian_vllm.py to jiutian.py
-cd /root/miniconda3/envs/vllm/lib/python3.10/site-packages/model_executor/models/
+cd /root/miniconda3/envs/XXX/lib/python3.10/site-packages/vllm/model_executor/models/
 mv jiutian_vllm.py jiutian.py
 ```
 
